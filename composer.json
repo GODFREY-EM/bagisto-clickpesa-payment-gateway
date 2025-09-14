@@ -1,0 +1,67 @@
+{
+    "name": "godfrey-em/clickpesa-payment-gateway-for-bagisto",
+    "type": "package",
+    "description": "MPesa payment gateway integration for Bagisto eCommerce platform. Provides a secure and fast payment solution for East African businesses.",
+    "keywords": [
+        "bagisto",
+        "payment",
+        "ecommerce",
+        "clickpesa",
+        "kenya",
+        "east-africa",
+        "opensource"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/GODFREY-EM/clickpesa-payment-gateway-for-bagisto",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Godfrey Ernest Mapunda",
+            "email": "godfreymapunda112@gmail.com",
+            "homepage": "https://github.com/GODFREY-EM",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/GODFREY-EM/clickpesa-payment-gateway-for-bagisto",
+        "issues": "https://github.com/GODFREY-EM/clickpesa-payment-gateway-for-bagisto/issues",
+        "email": "godfreymapunda112@gmail.com"
+    },
+    "require": {
+        "php": "^8.1",
+        "webkul/bagisto": "^2.3"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/webkul/bagisto"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Webkul\\ClickPesa\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\ClickPesa\\Providers\\ClickPesaServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan vendor:publish --provider='Webkul\\ClickPesa\\Providers\\ClickPesaServiceProvider'"
+        ],
+        "post-update-cmd": [
+            "php artisan vendor:publish --provider='Webkul\\ClickPesa\\Providers\\ClickPesaServiceProvider'"
+        ]
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/GODFREY-EM"
+        }
+    ]
+}
