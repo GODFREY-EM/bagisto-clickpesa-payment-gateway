@@ -1,7 +1,7 @@
 {
     "name": "godfrey-em/clickpesa-payment-gateway-for-bagisto",
     "type": "package",
-    "description": "MPesa payment gateway integration for Bagisto eCommerce platform. Provides a secure and fast payment solution for East African businesses.",
+    "description": "ClickPesa payment gateway integration for Bagisto eCommerce platform. Provides a secure and fast payment solution for Tanzanian businesses.",
     "keywords": [
         "bagisto",
         "payment",
