@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/clickpesa.png" alt="ClickPesa Logo" width="200">
+  <img src="src/Resources/assets/images/clickpesa.png" alt="ClickPesa Logo" width="200">
 </p>
 
 # ClickPesa Payment Gateway for Bagisto
